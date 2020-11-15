@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="Vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script ></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <title>Chợ Tốt</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="up">
+                <ul>
+                    <li class="logo">
+                        <a href="#"><img src="/img/transparent_logo.png" style="height: 40px;"></a>
+                    </li>
+                    <li>
+                        <i class="fas fa-home"></i>
+                        <a href="https://www.chotot.com/">Trang Chủ</a>
+                    </li>
+                    <li>
+                        <i class="far fa-smile-beam"></i>
+                        <a href="https://accounts.chotot.com/login?continue=https%3A%2F%2Fwww.chotot.com">Tôi Bán</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-comments-dollar"></i>
+                       <a href="https://accounts.chotot.com/login?continue=https://chat.chotot.com/messages"> Chat</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-bell"></i>
+                        <a href="https://accounts.chotot.com/login?continue=https://chat.chotot.com/messages">Thông Báo</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-ellipsis-h"></i>
+                        <a href="#">Thêm</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="down">
+                <div class="search">
+                    <input type="search" placeholder="Tìm Kiếm Trên Chợ Tốt">
+                    <a href="#">
+                        <i class="fas fa-search" style="margin-left: 30px;"></i>
+                    </a>
+                    <button class="button-btn">
+                        <a href="#">
+                            <i class="fas fa-user-check"></i>
+                            Đăng Nhập
+                        </a>
+                    </button>
+                    <button class="write-btn">
+                        <a href="#">
+                            <i class="fas fa-edit"></i>
+                            Đăng Tin
+                        </a>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="slide-show-picture">
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides fade">
+                  <img src="/img/buyer_collection_y_homepage_banner_1601881795854.jpg" style="width: 70%;">
+              </div>
+              <div class="mySlides fade">
+                  <img src="/img/buyer_collection_y_homepage_banner_1602218108457.jpg" style="width: 70%;">
+              </div>
+              <div class="mySlides fade">
+                  <img src="/img/buyer_collection_y_homepage_banner_1601872742613.jpg" style="width: 70%;">
+              </div>
+              <div class="mySlides fade">
+                  <img src="/img/buyer_collection_y_homepage_banner_1601612193508.jpg" style="width: 70%;">
+              </div>
+              <div class="mySlides fade">
+                  <img src="/img/buyer_collection_y_homepage_banner_1599536944643.jpg" style="width: 70%;">
+              </div>
+              <div class="mySlides fade">
+                  <img src="/img/buyer_collection_y_homepage_banner_1594106043478.jpg" style="width: 70%;">
+              </div>
+              <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+              </div>
+
+              <!---text slide show-->
+              <div class="slide-show-text">
+                <div class="text">
+                     Chợ Tốt Uư Đãi
+                     <img src="/img/icon-text/buyer_collection_y_shortcut_1578628328167.jpg" style="width: 15%;">
+                </div>
+            </div>
+            <div class="slide-show-text">
+                <div class="text">
+                    Nạp Đồng Tổt
+                    <img src="/img/icon-text/buyer_collection_y_shortcut_1584593600571.jpg" style="width: 15%;">
+                </div>
+
+            </div>
+            <div class="slide-show-text">
+                <div class="text">
+                    Tin Đăng Lưu
+                    <img src="/img/icon-text/buyer_collection_y_shortcut_1599536059896.jpg" style="width: 15%;">
+                </div>
+            </div>
+            <div class="slide-show-text">
+                <div class="text">
+                    Vòng Quay May Mắn
+                    <img src="/img/icon-text/buyer_collection_y_shortcut_1602471158333.jpg" style="width: 15%;">
+                </div>
+            </div>
+            <div class="slide-show-text">
+                <div class="text">
+                    Tìm Kiếm Đã lưu
+                    <img src="/img/icon-text/buyer_collection_y_shortcut_1578389174739.jpg" style="width: 15%;">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <!-- The dots/circles -->
+
+          <script>
+              var slideIndex = 0;
+              showSlides();
+               function showSlides() {
+            var i;
+                var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                     for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                 slideIndex++;
+                     if (slideIndex > slides.length) {slideIndex = 1}    
+                         for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                            setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+            </script>
+            
+    </div>
+    
+</body>
+</html>

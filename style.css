@@ -1,0 +1,143 @@
+.container{
+    width: 100%;
+    height: auto;
+}
+.menu{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(255, 186, 0);
+    text-align: center;
+}
+.logo a img{
+   padding-right: 320px;
+}
+.up{
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+}
+.up ul{
+    list-style: none;
+    margin-top: 0px;
+    
+}
+.up ul li{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+.up ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.up ul li a:hover{
+    color: white;
+}
+.up ul li a img{
+    vertical-align: middle;
+}
+.down{
+    height: 50px;
+    width: 80%;
+    margin: 0px auto;
+}
+.search input{
+    width: 550px;
+    height: 35px;
+    padding-left: 20px;
+    font-size: 15px;
+    border: 0px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.search input a{
+    text-decoration: none;
+}
+button{
+    margin-left: 30px;
+}
+.button-btn{
+    vertical-align: middle;
+    width: 150px;
+    height: 35px;
+    background-color: rgb(255, 186, 0);
+}
+.button-btn a{
+    text-decoration: none;
+    font-size: 14px;
+    z-index: 1000;
+}
+.write-btn{
+    width: 150px;
+    height: 35px;
+    background-color: #fc9807;
+}
+.write-btn a{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    outline: none;
+    font-weight: 500;
+}
+.write-btn:hover{
+    background-color: rgb(255, 186, 0);
+}
+.slide-show-picture{
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 2000px;
+    position: relative;
+    margin: auto;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+.mySlides{
+    display: none;
+}
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0px;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px 5px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+@keyframes fade{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+
+.slide-show-text{
+    text-align: center;
+    font-size: 15px;
+    padding: 0 5px;
+    display: inline-block;
+}
+.slide-show-text img{
+    vertical-align: middle;
+}
